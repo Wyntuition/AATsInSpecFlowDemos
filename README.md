@@ -1,4 +1,6 @@
-AATsInSpecFlowDemos
+AATs In SpecFlow Demos
 ===================
 
-Automated Acceptance Testing Demo in SpecFlow - Simple &amp; with Page Objects
+-One simple example just executing a spec against a unit test against an object
+
+-One example using the page object pattern
