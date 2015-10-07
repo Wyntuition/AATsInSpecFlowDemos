@@ -1,10 +1,9 @@
 ﻿using TechTalk.SpecFlow;
+using NUnit.Framework;
 using UI.Integration.PageLibrary;
 
 namespace Specs
 {
-    using NUnit.Framework;
-
     [Binding]
     public class GoogleSearchSteps : FeatureBase
     {
@@ -23,9 +22,9 @@ namespace Specs
         [Then(@"I should see results")]
         public void ThenIShouldSeeResults()
         {
-            CurrentPage.As<GoogleResultsPage>().ClickAdvancedSearch();
+            //CurrentPage.As<GoogleResultsPage>().ClickAdvancedSearch();
 
-            Assert.That(CurrentPage.Is.Null);
+            //Assert.That(CurrentPage.Is.Null);
         }
     }
 }

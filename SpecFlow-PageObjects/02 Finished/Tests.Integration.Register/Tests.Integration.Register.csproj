@@ -48,13 +48,13 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\Register.DAL\Register.DAL.csproj">
+      <Project>{fe155630-2527-4119-9204-916827a68432}</Project>
+      <Name>Register.DAL</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Register.Domain\Register.Domain.csproj">
       <Project>{98863876-64b9-4d96-bf49-7b44e5b5457a}</Project>
       <Name>Resister.Domain</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\VendingMachine.DAL\Register.DAL.csproj">
-      <Project>{fe155630-2527-4119-9204-916827a68432}</Project>
-      <Name>VendingMachine.DAL</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>

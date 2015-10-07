@@ -46,7 +46,7 @@
     <Compile Include="Register.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\VendingMachine.DAL\Register.DAL.csproj">
+    <ProjectReference Include="..\Register.DAL\Register.DAL.csproj">
       <Project>{fe155630-2527-4119-9204-916827a68432}</Project>
       <Name>Register.DAL</Name>
     </ProjectReference>

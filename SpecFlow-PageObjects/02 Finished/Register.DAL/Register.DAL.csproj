@@ -7,8 +7,8 @@
     <ProjectGuid>{FE155630-2527-4119-9204-916827A68432}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>VendingMachine.DAL</RootNamespace>
-    <AssemblyName>VendingMachine.DAL</AssemblyName>
+    <RootNamespace>Register.DAL</RootNamespace>
+    <AssemblyName>Register.DAL</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>

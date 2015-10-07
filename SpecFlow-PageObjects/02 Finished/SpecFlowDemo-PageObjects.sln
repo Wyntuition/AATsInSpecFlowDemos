@@ -11,8 +11,6 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "IntegrationAndUi", "Integra
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Unit", "Unit", "{23B34968-EF2B-4355-9588-002C38BA65AC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Register.DAL", "VendingMachine.DAL\Register.DAL.csproj", "{FE155630-2527-4119-9204-916827A68432}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tests.Unit.Register.Domain", "Tests.Unit.Register.Domain\Tests.Unit.Register.Domain.csproj", "{2FC689F0-6ACE-488C-AD65-CE99905C4FAD}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Register.Domain", "Register.Domain\Register.Domain.csproj", "{98863876-64B9-4D96-BF49-7B44E5B5457A}"
@@ -22,6 +20,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tests.Integration.Register", "Tests.Integration.Register\Tests.Integration.Register.csproj", "{558916B7-288D-4FA6-8373-0F84066DBC9C}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tests.UI.Register", "Tests.UI.Register\Tests.UI.Register.csproj", "{07557C96-839E-4442-97E5-1EC7DD2C9B7E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Register.DAL", "Register.DAL\Register.DAL.csproj", "{FE155630-2527-4119-9204-916827A68432}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,10 +33,6 @@ Global
 		{915970AD-9053-4022-B412-82B6E7ADDA2E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{915970AD-9053-4022-B412-82B6E7ADDA2E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{915970AD-9053-4022-B412-82B6E7ADDA2E}.Release|Any CPU.Build.0 = Release|Any CPU
-		{FE155630-2527-4119-9204-916827A68432}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{FE155630-2527-4119-9204-916827A68432}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{FE155630-2527-4119-9204-916827A68432}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{FE155630-2527-4119-9204-916827A68432}.Release|Any CPU.Build.0 = Release|Any CPU
 		{2FC689F0-6ACE-488C-AD65-CE99905C4FAD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{2FC689F0-6ACE-488C-AD65-CE99905C4FAD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2FC689F0-6ACE-488C-AD65-CE99905C4FAD}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -57,6 +53,10 @@ Global
 		{07557C96-839E-4442-97E5-1EC7DD2C9B7E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{07557C96-839E-4442-97E5-1EC7DD2C9B7E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{07557C96-839E-4442-97E5-1EC7DD2C9B7E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FE155630-2527-4119-9204-916827A68432}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FE155630-2527-4119-9204-916827A68432}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FE155630-2527-4119-9204-916827A68432}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FE155630-2527-4119-9204-916827A68432}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

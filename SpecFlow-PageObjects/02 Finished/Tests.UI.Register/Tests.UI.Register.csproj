@@ -7,8 +7,8 @@
     <ProjectGuid>{07557C96-839E-4442-97E5-1EC7DD2C9B7E}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>UI.Integration</RootNamespace>
-    <AssemblyName>UI.Integration</AssemblyName>
+    <RootNamespace>Tests.UI.Register</RootNamespace>
+    <AssemblyName>Tests.UI.Register</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>

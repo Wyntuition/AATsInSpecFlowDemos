@@ -57,21 +57,20 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="FeatureBase.cs" />
-    <Compile Include="GoogleSearch.feature.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>GoogleSearch.feature</DependentUpon>
-    </Compile>
-    <Compile Include="GoogleSearchSteps.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
-    <None Include="GoogleSearch.feature">
-      <Generator>SpecFlowSingleFileGenerator</Generator>
-      <LastGenOutput>GoogleSearch.feature.cs</LastGenOutput>
-    </None>
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{82A7F48D-3B50-4B1E-B82E-3ADA8210C358}" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Tests.UI.Register\Tests.UI.Register.csproj">
+      <Project>{07557c96-839e-4442-97e5-1ec7dd2c9b7e}</Project>
+      <Name>Tests.UI.Register</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
