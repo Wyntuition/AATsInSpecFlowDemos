@@ -1,12 +1,11 @@
 ﻿Feature: Google Search
   As an internet user
-  I want to search for “SOLID principles”
+  I want to search for “ALT.NET”
   So that I can be knowledgeable about the organzation
 
 @UI
-Scenario: Search for ‘SOLID principles’
+Scenario: Search for "ALT.NET"
   Given I am on the Google Home Page
-  When I search for 'Solid Principles'
-  Then I should see the wikipedia page 
-  And I should see over 100,000 results
+  When I search for ”ALT.NET"
+  Then I should see results
   

@@ -32,8 +32,8 @@ namespace Specs
         public virtual void FeatureSetup()
         {
             testRunner = TechTalk.SpecFlow.TestRunnerManager.GetTestRunner();
-            TechTalk.SpecFlow.FeatureInfo featureInfo = new TechTalk.SpecFlow.FeatureInfo(new System.Globalization.CultureInfo("en-US"), "Google Search", "As an internet user\r\nI want to search for “SOLID principles”\r\nSo that I can be kn" +
-                    "owledgeable about the organzation", ProgrammingLanguage.CSharp, ((string[])(null)));
+            TechTalk.SpecFlow.FeatureInfo featureInfo = new TechTalk.SpecFlow.FeatureInfo(new System.Globalization.CultureInfo("en-US"), "Google Search", "As an internet user\r\nI want to search for “ALT.NET”\r\nSo that I can be knowledgeab" +
+                    "le about the organzation", ProgrammingLanguage.CSharp, ((string[])(null)));
             testRunner.OnFeatureStart(featureInfo);
         }
         
@@ -66,22 +66,20 @@ namespace Specs
         }
         
         [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("Search for ‘SOLID principles’")]
+        [NUnit.Framework.DescriptionAttribute("Search for \"ALT.NET\"")]
         [NUnit.Framework.CategoryAttribute("UI")]
-        public virtual void SearchForSOLIDPrinciples()
+        public virtual void SearchForALT_NET()
         {
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Search for ‘SOLID principles’", new string[] {
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Search for \"ALT.NET\"", new string[] {
                         "UI"});
 #line 7
 this.ScenarioSetup(scenarioInfo);
 #line 8
   testRunner.Given("I am on the Google Home Page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line 9
-  testRunner.When("I search for \'Solid Principles\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+  testRunner.When("I search for ”ALT.NET\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line 10
-  testRunner.Then("I should see the wikipedia page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
-#line 11
-  testRunner.And("I should see over 100,000 results", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+  testRunner.Then("I should see results", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             this.ScenarioCleanup();
         }
