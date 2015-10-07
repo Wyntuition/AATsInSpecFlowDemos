@@ -1,4 +1,5 @@
-﻿using TechTalk.SpecFlow;
+﻿using NUnit.Framework;
+using TechTalk.SpecFlow;
 using UI.Integration.PageLibrary;
 
 namespace Specs
@@ -12,16 +13,23 @@ namespace Specs
             CurrentPage = GoogleHomepage.LoadIndexPage(CurrentDriver, "http://www.google.com");
         }
 
-        [When(@"I search for ”ALT\.NET""")]
-        public void WhenISearchForALT_NET()
+        [When(@"I search for '(.*)'")]
+        public void WhenISearchFor(string p0)
         {
-            NextPage = CurrentPage.As<GoogleHomepage>().EnterSearchQuery("ALT.NET");
+            NextPage = CurrentPage.As<GoogleHomepage>().EnterSearchQuery(p0);
         }
 
-        [Then(@"I should see results")]
-        public void ThenIShouldSeeResults()
+        [Then(@"I should see the wikipedia page")]
+        public void ThenIShouldSeeTheWikipediaPage()
         {
-            CurrentPage.As<GoogleResultsPage>().ClickAdvancedSearch();
+            Assert.That(CurrentPage.As<GoogleResultsPage>().IsWikipediaPageDisplayed());
         }
+
+        [Then(@"I should see over (.*) results")]
+        public void ThenIShouldSeeOverResults(decimal p0)
+        {
+            Assert.That(CurrentPage.As<GoogleResultsPage>().AreOverOneMillionResultsDisplayed());
+        }
+
     }
 }

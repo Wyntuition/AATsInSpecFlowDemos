@@ -1,0 +1,10 @@
+﻿Feature: InsertMoney
+	In order to ensure money is accepted correctly
+	As a register
+	I want to register the money received
+
+@mytag
+Scenario: Insery money
+	Given I have a coin to submit to the register
+	When I submit the moeny
+	Then the register should show how much I gave

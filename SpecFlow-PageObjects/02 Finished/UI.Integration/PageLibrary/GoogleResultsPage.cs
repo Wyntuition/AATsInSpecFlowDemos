@@ -6,9 +6,14 @@ namespace UI.Integration.PageLibrary
     {
         public const string AdvancedSearchLink = "sflas";
 
-        public void ClickAdvancedSearch()
+        public bool IsWikipediaPageDisplayed()
         {
-            Driver.FindElement(By.Id(AdvancedSearchLink)).Click();
+            return Driver.FindElement(By.PartialLinkText("wikipedia")).Displayed;
+        }
+
+        public bool AreOverOneMillionResultsDisplayed()
+        {
+            return Driver.FindElement(By.PartialLinkText("000,000")).Displayed;
         }
     }
 }

@@ -31,7 +31,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="nunit.framework">
-      <HintPath>..\ClassLibrary1\packages\NUnit.2.6.2\lib\nunit.framework.dll</HintPath>
+      <HintPath>..\packages\NUnit.2.6.4\lib\nunit.framework.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -42,13 +42,13 @@
     <Reference Include="System.Data" />
     <Reference Include="System.Xml" />
     <Reference Include="TechTalk.SpecFlow">
-      <HintPath>..\ClassLibrary1\packages\SpecFlow.1.9.0\lib\net35\TechTalk.SpecFlow.dll</HintPath>
+      <HintPath>..\packages\SpecFlow.1.9.0\lib\net35\TechTalk.SpecFlow.dll</HintPath>
     </Reference>
     <Reference Include="WebDriver">
-      <HintPath>..\ClassLibrary1\packages\Selenium.WebDriver.2.33.0\lib\net40\WebDriver.dll</HintPath>
+      <HintPath>..\packages\Selenium.WebDriver.2.47.0\lib\net40\WebDriver.dll</HintPath>
     </Reference>
     <Reference Include="WebDriver.Support">
-      <HintPath>..\ClassLibrary1\packages\Selenium.Support.2.33.0\lib\net40\WebDriver.Support.dll</HintPath>
+      <HintPath>..\packages\Selenium.Support.2.47.0\lib\net40\WebDriver.Support.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
@@ -59,6 +59,18 @@
       <DependentUpon>GoogleSearch.feature</DependentUpon>
     </Compile>
     <Compile Include="GoogleSearchSteps.cs" />
+    <Compile Include="InsertMoney.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>InsertMoney.feature</DependentUpon>
+    </Compile>
+    <Compile Include="InsertMoneyDemo.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>InsertMoneyDemo.feature</DependentUpon>
+    </Compile>
+    <Compile Include="InsertMoneyDemoSteps.cs" />
+    <Compile Include="InsertMoneySteps.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -67,6 +79,14 @@
       <Generator>SpecFlowSingleFileGenerator</Generator>
       <LastGenOutput>GoogleSearch.feature.cs</LastGenOutput>
     </None>
+    <None Include="InsertMoney.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>InsertMoney.feature.cs</LastGenOutput>
+    </None>
+    <None Include="InsertMoneyDemo.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>InsertMoneyDemo.feature.cs</LastGenOutput>
+    </None>
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
@@ -74,10 +94,13 @@
       <Project>{98863876-64b9-4d96-bf49-7b44e5b5457a}</Project>
       <Name>Domain</Name>
     </ProjectReference>
-    <ProjectReference Include="..\UI.Integration\UI.Integration.csproj">
+    <ProjectReference Include="..\UI.Integration\Tests.UI.Register.csproj">
       <Project>{07557c96-839e-4442-97e5-1ec7dd2c9b7e}</Project>
-      <Name>UI.Integration</Name>
+      <Name>Tests.UI.Register</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{82A7F48D-3B50-4B1E-B82E-3ADA8210C358}" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

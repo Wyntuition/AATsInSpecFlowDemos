@@ -4,7 +4,7 @@ namespace UI.Integration.PageLibrary
 {
     public class GoogleHomepage : PageBase
     {
-        public const string GoogleSearchBoxId = "gbqfq";
+        public const string GoogleSearchBoxId = "lst-ib";
 
         public static GoogleHomepage LoadIndexPage(IWebDriver driver, string baseUrl)
         {
