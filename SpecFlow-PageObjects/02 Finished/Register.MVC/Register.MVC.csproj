@@ -260,9 +260,9 @@
     <Folder Include="App_Data\" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Domain\Domain.csproj">
+    <ProjectReference Include="..\Register.Domain\Register.Domain.csproj">
       <Project>{98863876-64b9-4d96-bf49-7b44e5b5457a}</Project>
-      <Name>Domain</Name>
+      <Name>Resister.Domain</Name>
     </ProjectReference>
   </ItemGroup>
   <PropertyGroup>

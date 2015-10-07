@@ -73,16 +73,6 @@
     </None>
     <None Include="packages.config" />
   </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\Domain\Domain.csproj">
-      <Project>{98863876-64b9-4d96-bf49-7b44e5b5457a}</Project>
-      <Name>Domain</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\UI.Integration\UI.Integration.csproj">
-      <Project>{07557c96-839e-4442-97e5-1ec7dd2c9b7e}</Project>
-      <Name>UI.Integration</Name>
-    </ProjectReference>
-  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
