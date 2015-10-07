@@ -14,5 +14,41 @@ namespace VendingMachine
         {
             Assert.Pass();
         }
+
+        [Test]
+        public void InsertCoin_GivenAQuarter_ThenShowThatPayment2()
+        {
+            Assert.Pass();
+        }
+
+        [Test]
+        public void InsertCoin_GivenAQuarter_ThenShowThatPayment3()
+        {
+            Assert.Pass();
+        }
+
+        [Test]
+        public void InsertCoin_GivenAQuarter_ThenShowThatPayment4()
+        {
+            Assert.Pass();
+        }
+
+        [Test]
+        public void InsertCoin_GivenAQuarter_ThenShowThatPayment5()
+        {
+            Assert.Pass();
+        }
+
+        [Test]
+        public void InsertCoin_GivenAQuarter_ThenShowThatPayment6()
+        {
+            Assert.Pass();
+        }
+
+        [Test]
+        public void InsertCoin_GivenAQuarter_ThenShowThatPayment7()
+        {
+            Assert.Pass();
+        }
     }
 }

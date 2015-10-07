@@ -32,7 +32,7 @@ namespace Tests.Integration.VendingMachine
             this.transScope.Dispose();
         }
 
-        [Ignore("Not returning 25")]
+        [Ignore]
         [Test]
         public void SavePayment_AddPayment_AddsToTotal()
         {
