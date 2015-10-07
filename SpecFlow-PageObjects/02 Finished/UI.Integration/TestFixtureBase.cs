@@ -8,6 +8,8 @@ using TechTalk.SpecFlow;
 
 namespace UI.Integration
 {
+    using OpenQA.Selenium.Chrome;
+
     public class TestFixtureBase : Steps
     {
         protected IWebDriver CurrentDriver { get; set; }
@@ -16,7 +18,8 @@ namespace UI.Integration
         public void Test_Setup()
         {
             //if (ConfigurationManager.AppSettings["SpecFlowDriver"] == "Firefox")
-            CurrentDriver = new FirefoxDriver(new FirefoxBinary(), new FirefoxProfile());
+            //CurrentDriver = new FirefoxDriver(new FirefoxBinary(), new FirefoxProfile());
+            CurrentDriver = new ChromeDriver();
             //else
             //    CurrentDriver = new PhantomJSDriver();
 

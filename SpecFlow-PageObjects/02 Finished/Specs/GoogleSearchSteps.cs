@@ -3,6 +3,8 @@ using UI.Integration.PageLibrary;
 
 namespace Specs
 {
+    using NUnit.Framework;
+
     [Binding]
     public class GoogleSearchSteps : FeatureBase
     {
@@ -22,6 +24,8 @@ namespace Specs
         public void ThenIShouldSeeResults()
         {
             CurrentPage.As<GoogleResultsPage>().ClickAdvancedSearch();
+
+            Assert.That(CurrentPage.Is.Null);
         }
     }
 }
