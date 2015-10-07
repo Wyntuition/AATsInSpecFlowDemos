@@ -32,13 +32,12 @@ namespace Tests.Integration.VendingMachine
             this.transScope.Dispose();
         }
 
-        [Ignore]
         [Test]
         public void SavePayment_AddPayment_AddsToTotal()
         {
             register.InsertCoin();
 
-            Assert.That(register.Payment == 25, register.Payment.ToString());
+            Assert.That(register.Payment == 26, register.Payment.ToString());
         }
     }
 }
