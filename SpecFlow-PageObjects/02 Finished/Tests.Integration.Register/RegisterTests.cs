@@ -37,7 +37,7 @@ namespace Tests.Integration.VendingMachine
         {
             register.InsertCoin();
 
-            Assert.That(register.Payment == 26, register.Payment.ToString());
+            Assert.That(register.Payment == 25, register.Payment.ToString());
         }
     }
 }
